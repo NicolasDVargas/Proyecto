@@ -1,0 +1,21 @@
+<div class= "container">
+    <h1>Pagina no encontrada</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let nombre of arreglo">
+                <td>{{ nombre }}</td>
+                <td><input type="button" value="Agregar Elemento" (click)="agregarElemento(nombre)"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <input class="col-xs-4" type="button" value="Agregar Elemento" (click)="agregarElemento('pepe')">
+    <a routerLink="/">Volver inicio</a>
+</div>
+
+

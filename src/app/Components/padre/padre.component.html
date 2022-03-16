@@ -1,0 +1,9 @@
+<p>padre works!</p>
+
+<app-hijo #miHijo [value]="nombre" (valorEnvio)="recibirInfo($event)"></app-hijo>
+
+<app-hijo [value]="nombre" (valorEnvio)="recibirInfo($event)"></app-hijo>
+
+<br>
+<input type="button" value="saludar desde el padre" (click)="saludarHijoDesdePadre()">
+

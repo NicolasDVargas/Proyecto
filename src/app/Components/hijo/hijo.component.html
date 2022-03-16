@@ -1,0 +1,8 @@
+<p>hijo works!</p>
+
+<label>Nombre desde el componente hijo: {{value}}</label>
+
+<label for="nombreHijo">Nombre componente hijo </label>
+<input type ="text" id="nombreHijo" [(ngModel)]="nombreHijo">
+
+<input type="button" value="enviar a padre" (click)="emiter()">
